@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+         nodeOrientation="RIGHT_TO_LEFT" prefHeight="557.0" prefWidth="797.0" stylesheets="@../styles/tab.css"
+         tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <tabs>
+        <Tab text="Login">
+            <content>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <JFXPasswordField layoutX="200.0" layoutY="210.0" maxWidth="361.0" minWidth="308.0"
+                                          opacity="0.63" prefHeight="38.0" prefWidth="361.0" promptText="Password">
+                            <opaqueInsets>
+                                <Insets/>
+                            </opaqueInsets>
+                        </JFXPasswordField>
+                        <JFXTextField layoutX="200.0" layoutY="150.0" maxWidth="360.0" minWidth="296.0" opacity="0.63"
+                                      prefHeight="38.0" prefWidth="360.0" promptText="Username">
+                            <font>
+                                <Font name="Comic Sans MS" size="13.0"/>
+                            </font>
+                        </JFXTextField>
+                        <JFXButton layoutX="255.0" layoutY="321.0" prefHeight="45.0" prefWidth="244.0" text="Login"/>
+                        <Label layoutX="363.0" layoutY="77.0" opacity="0.75" text="Welcome">
+                            <font>
+                                <Font name="Chalkboard" size="35.0"/>
+                            </font>
+                        </Label>
+                        <Label layoutX="259.0" layoutY="77.0" opacity="0.75" text="back" textFill="#4644c2">
+                            <font>
+                                <Font name="Chalkboard" size="35.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="Regiser">
+            <content>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <JFXTextField layoutX="200.0" layoutY="130.0" maxWidth="360.0" minWidth="296.0" opacity="0.63"
+                                      prefHeight="38.0" prefWidth="360.0" promptText="Username">
+                            <font>
+                                <Font name="Comic Sans MS" size="13.0"/>
+                            </font>
+                        </JFXTextField>
+                        <JFXPasswordField layoutX="200.0" layoutY="190.0" maxWidth="361.0" minWidth="308.0"
+                                          opacity="0.63" prefHeight="38.0" prefWidth="361.0" promptText="Password">
+                            <opaqueInsets>
+                                <Insets/>
+                            </opaqueInsets>
+                        </JFXPasswordField>
+                        <JFXPasswordField layoutX="200.0" layoutY="250.0" maxWidth="361.0" minWidth="308.0"
+                                          opacity="0.63" prefHeight="38.0" prefWidth="361.0" promptText="Password">
+                            <opaqueInsets>
+                                <Insets/>
+                            </opaqueInsets>
+                        </JFXPasswordField>
+                        <Label layoutX="182.0" layoutY="75.0" opacity="0.75" text="Enter your personal data">
+                            <font>
+                                <Font name="Chalkboard" size="35.0"/>
+                            </font>
+                        </Label>
+                        <JFXButton layoutX="255.0" layoutY="321.0" prefHeight="45.0" prefWidth="244.0" text="Register"/>
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>

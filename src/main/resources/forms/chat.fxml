@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="borderPane" maxHeight="658.0" maxWidth="1052.0" prefHeight="658.0" prefWidth="1052.0"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.controller.ChatController">
+    <center>
+        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+            <children>
+
+                <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" maxHeight="1.7976931348623157E308"
+                            maxWidth="1.7976931348623157E308" pannable="true" prefHeight="496.0" vbarPolicy="ALWAYS"
+                            vmin="1.0" vvalue="1.0" VBox.vgrow="ALWAYS">
+                    <content>
+                        <ListView fx:id="chatListView" maxHeight="1.7976931348623157E308"
+                                  maxWidth="1.7976931348623157E308" prefHeight="522.0" prefWidth="805.0"/>
+                    </content>
+                </ScrollPane>
+
+                <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+                      minWidth="100.0" VBox.vgrow="NEVER">
+                    <children>
+                        <TextArea fx:id="msgInput" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                                  minHeight="-Infinity" minWidth="100.0" nodeOrientation="LEFT_TO_RIGHT"
+                                  prefHeight="50.0" prefWidth="701.0" promptText="Write messege ..." scaleShape="false"
+                                  HBox.hgrow="ALWAYS"/>
+                        <Button alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                                minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+                                onAction="#sendMessage" prefHeight="29.0" prefWidth="122.0" scaleShape="false"
+                                text="Send" textAlignment="CENTER" HBox.hgrow="NEVER">
+                            <font>
+                                <Font name="System Bold" size="15.0"/>
+                            </font>
+                            <HBox.margin>
+                                <Insets bottom="5.0" left="10.0" right="10.0" top="5.0"/>
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </center>
+    <left>
+        <VBox maxHeight="1.7976931348623157E308" BorderPane.alignment="CENTER">
+            <children>
+                <ListView fx:id="userList" focusTraversable="false" maxHeight="1.7976931348623157E308"
+                          onMouseClicked="#onListViewClick" prefHeight="580.0" prefWidth="200.0">
+                </ListView>
+            </children>
+        </VBox>
+    </left>
+    <rotationAxis>
+        <Point3D/>
+    </rotationAxis>
+    <top>
+        <Label alignment="CENTER" blendMode="DIFFERENCE" prefHeight="87.0" prefWidth="641.0" text="Zorro Messenger"
+               BorderPane.alignment="CENTER">
+            <font>
+                <Font size="39.0"/>
+            </font>
+        </Label>
+    </top>
+</BorderPane>
