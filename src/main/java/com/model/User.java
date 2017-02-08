@@ -3,7 +3,7 @@ package com.model;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-@Repository("user")
+
 public class User {
     private String name;
     private String password;
@@ -15,8 +15,6 @@ public class User {
         this.password = password;
     }
 
-
-    @Autowired
     public User(String name, String password) {
         this.name = name;
         this.password = password;
